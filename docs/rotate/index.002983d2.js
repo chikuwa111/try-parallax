@@ -1,0 +1,2 @@
+var e;e={"#rotate-text":{transform:e=>`rotate(${e/5}deg)`}},function(e){window.addEventListener("DOMContentLoaded",(()=>{e(window.scrollY)}));let t=0,o=!1;window.addEventListener("scroll",(()=>{t=window.scrollY,o||(window.requestAnimationFrame((()=>{e(t),o=!1})),o=!0)}))}((t=>{Object.entries(e).forEach((([e,o])=>{document.querySelectorAll(e).forEach((e=>{Object.entries(o).forEach((([o,n])=>{e.style[o]=n(t)}))}))}))}));
+//# sourceMappingURL=index.002983d2.js.map

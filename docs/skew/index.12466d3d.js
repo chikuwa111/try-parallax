@@ -1,0 +1,2 @@
+var e;e={"#skew-text":{transform:e=>`skew(${e/10}deg)`}},function(e){window.addEventListener("DOMContentLoaded",(()=>{e(window.scrollY)}));let t=0,n=!1;window.addEventListener("scroll",(()=>{t=window.scrollY,n||(window.requestAnimationFrame((()=>{e(t),n=!1})),n=!0)}))}((t=>{Object.entries(e).forEach((([e,n])=>{document.querySelectorAll(e).forEach((e=>{Object.entries(n).forEach((([n,o])=>{e.style[n]=o(t)}))}))}))}));
+//# sourceMappingURL=index.12466d3d.js.map
