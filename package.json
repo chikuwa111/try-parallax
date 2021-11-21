@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "parcel src/index.html src/**/*.html",
-    "build": "parcel build src/index.html src/**/*.html --dist-dir docs",
+    "build": "parcel build src/index.html src/**/*.html --dist-dir docs --public-url https://chikuwa111.github.io/try-parallax/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
