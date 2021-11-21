@@ -25,3 +25,23 @@ export function registerAnimation(animate: (scrollY: number) => void) {
     }
   });
 }
+
+export type AnimationMap = {
+  [selector: string]: {
+    [cssProperty: string]: (scrollY: number) => string;
+  }
+};
+
+export function registerAnimationMap(animationMap: AnimationMap) {
+  registerAnimation((scrollY: number) => {
+    Object.entries(animationMap).forEach(([selector, styles]) => {
+      const elements: NodeListOf<HTMLElement> =
+        document.querySelectorAll(selector);
+      elements.forEach((element) => {
+        Object.entries(styles).forEach(([property, update]) => {
+          element.style[property] = update(scrollY);
+        });
+      });
+    });
+  });
+}
